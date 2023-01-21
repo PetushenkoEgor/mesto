@@ -24,8 +24,6 @@ body {
   margin: 0;
 }
 
-body.body {}
-
 /**
  * Render the `main` element consistently in IE.
  */
