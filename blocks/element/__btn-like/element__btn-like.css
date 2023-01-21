@@ -1,0 +1,15 @@
+.element__btn-like{
+  margin: 0;
+  width: 22px;
+  height: 19px;
+  border: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element__btn-like:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}

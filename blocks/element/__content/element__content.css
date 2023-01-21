@@ -1,0 +1,10 @@
+.element__content{
+  margin: 0;
+  margin-left: 21px;
+  margin-top: 25px;
+  max-width: calc(100% - 36px);
+  height: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

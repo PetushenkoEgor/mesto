@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="./pages/index.css">
+</head>
+<body class="body">
+  <div class="page">
+    <header class="header">
+      <img class="header__logo" src="./images/Vector.svg" alt="Mesto Russia">
+    </header>
+  <main class="content">
+    <section class="profile">
+      <div class="profile__info-group">
+        <img class="profile__avatar" src="./images/Кусто.jpg" alt="Жак-Ив Кусто"> 
+        <div class="profile__info">
+            <p class="profile__user-name">Жак-Ив Кусто</p>
+            <button class="profile__edit-button" type="button">
+              <img class="profile__edit-button-image" src="./images/карандаш.svg" alt="карандаш">
+            </button>
+          <p class="profile__user-info">Исследователь океана</p>
+       </div>
+      </div>  
+      <button class="profile__add-button"><img class="profile__add-button-image" src="./images/крест.svg"></button>
+    </section>
+    <section class="elements">
+      <div class="element">
+        <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
+        <div class="element__content">
+          <p class="element__text">Карачаевск</p>
+          <button class="element__btn-like">
+            <img class="element__like" src="./images/like.svg" alt="лайк">
+          </button>
+        </div>
+      </div>
+      <div class="element">
+        <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
+        <div class="element__content">
+          <p class="element__text">Эльбрус</p>
+          <button class="element__btn-like">
+            <img class="element__like" src="./images/like.svg" alt="лайк">
+          </button>
+        </div>
+      </div>
+      <div class="element">
+        <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
+        <div class="element__content">
+          <p class="element__text">Домбай</p>
+          <button class="element__btn-like">
+            <img class="element__like" src="./images/like.svg" alt="лайк">
+          </button>
+        </div>
+      </div>
+      <div class="element">
+        <img class="element__image" src="./images/place-karelia.jpg" alt="Карелия">
+        <div class="element__content">
+          <p class="element__text">Карелия</p>
+          <button class="element__btn-like">
+            <img class="element__like" src="./images/like.svg" alt="лайк">
+          </button>
+        </div>
+      </div>
+      <div class="element">
+        <img class="element__image" src="./images/photo-grid-baikal.jpg" alt="байкал">
+        <div class="element__content">
+          <p class="element__text">Байкал</p>
+          <button class="element__btn-like">
+            <img class="element__like" src="./images/like.svg" alt="лайк">
+          </button>
+        </div>
+      </div>
+      <div class="element">
+        <img class="element__image" src="./images/place-kolsky.jpg" alt="Кольский">
+        <div class="element__content">
+          <p class="element__text">Кольский</p>
+          <button class="element__btn-like">
+            <img class="element__like" src="./images/like.svg" alt="лайк">
+          </button>
+        </div>
+      </div>
+    </section>
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__close" type="button">
+          <img class="popup__close-icon" src="./images/Close Icon.svg" alt="Закрыть окно">
+        </button>
+        <h2 class="popup__heading">Редактировать профиль</h2>
+        <form class="popup__form" name="form-popup">
+          <input type="text" class="popup__user-name" id="nameInput" name="nameInput" value="Жак-Ив Кусто">
+          <input type="text" class="popup__user-info" id="jobInput" name="jobInput" value="Исследователь океана">
+          <button class="popup__submit-button" type="submit">
+            <p class="popup__button-text">Сохранить</p>
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <img class="footer__logo" src="./images/© 2020 Mesto Russia.svg" alt="Mesto Russia">
+    </footer>
+    <script src="./vendor/script/script.js"></script>
+  </main>
+  </div>
+</body>
