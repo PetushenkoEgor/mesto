@@ -16,20 +16,22 @@
       <div class="profile__info-group">
         <img class="profile__avatar" src="./images/Кусто.jpg" alt="Жак-Ив Кусто"> 
         <div class="profile__info">
-            <p class="profile__user-name">Жак-Ив Кусто</p>
+            <h1 class="profile__user-name">Жак-Ив Кусто</h1>
             <button class="profile__edit-button" type="button">
               <img class="profile__edit-button-image" src="./images/карандаш.svg" alt="карандаш">
             </button>
           <p class="profile__user-info">Исследователь океана</p>
        </div>
       </div>  
-      <button class="profile__add-button"><img class="profile__add-button-image" src="./images/крест.svg" alt="добавить"></button>
+      <button class="profile__add-button" type="button">
+        <img class="profile__add-button-image" src="./images/крест.svg" alt="добавить">
+      </button>
     </section>
     <section class="elements">
       <div class="element">
         <img class="element__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
         <div class="element__content">
-          <p class="element__text">Карачаевск</p>
+          <h2 class="element__text">Карачаевск</h2>
           <button class="element__btn-like">
             <img class="element__like" src="./images/like.svg" alt="лайк">
           </button>
@@ -38,7 +40,7 @@
       <div class="element">
         <img class="element__image" src="./images/elbrus.jpg" alt="Эльбрус">
         <div class="element__content">
-          <p class="element__text">Эльбрус</p>
+          <h2 class="element__text">Эльбрус</h2>
           <button class="element__btn-like">
             <img class="element__like" src="./images/like.svg" alt="лайк">
           </button>
@@ -47,7 +49,7 @@
       <div class="element">
         <img class="element__image" src="./images/dombai.jpg" alt="Домбай">
         <div class="element__content">
-          <p class="element__text">Домбай</p>
+          <h2 class="element__text">Домбай</h2>
           <button class="element__btn-like">
             <img class="element__like" src="./images/like.svg" alt="лайк">
           </button>
@@ -56,7 +58,7 @@
       <div class="element">
         <img class="element__image" src="./images/place-karelia.jpg" alt="Карелия">
         <div class="element__content">
-          <p class="element__text">Карелия</p>
+          <h2 class="element__text">Карелия</h2>
           <button class="element__btn-like">
             <img class="element__like" src="./images/like.svg" alt="лайк">
           </button>
@@ -65,7 +67,7 @@
       <div class="element">
         <img class="element__image" src="./images/photo-grid-baikal.jpg" alt="байкал">
         <div class="element__content">
-          <p class="element__text">Байкал</p>
+          <h2 class="element__text">Байкал</h2>
           <button class="element__btn-like">
             <img class="element__like" src="./images/like.svg" alt="лайк">
           </button>
@@ -74,7 +76,7 @@
       <div class="element">
         <img class="element__image" src="./images/place-kolsky.jpg" alt="Кольский">
         <div class="element__content">
-          <p class="element__text">Кольский</p>
+          <h2 class="element__text">Кольский</h2>
           <button class="element__btn-like">
             <img class="element__like" src="./images/like.svg" alt="лайк">
           </button>
@@ -88,17 +90,17 @@
         </button>
         <h2 class="popup__heading">Редактировать профиль</h2>
         <form class="popup__form" name="form-popup">
-          <input type="text" class="popup__user-name" id="nameInput" name="nameInput" value="Жак-Ив Кусто">
-          <input type="text" class="popup__user-info" id="jobInput" name="jobInput" value="Исследователь океана">
+          <input type="text" class="popup__form-input popup__form-input_user-name" id="nameInput" name="nameInput" value="Жак-Ив Кусто">
+          <input type="text" class="popup__form-input popup__form-input_user-info" id="jobInput" name="jobInput" value="Исследователь океана">
           <button class="popup__submit-button" type="submit">Сохранить</button>
         </form>
       </div>
     </div>
-    <footer class="footer">
-      <img class="footer__logo" src="./images/©2020MestoRussia.svg" alt="Место Россия">
-    </footer>
-    <script src="./vendor/script/script.js"></script>
   </main>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2020 Mesto Russia</p>
+    </footer>
   </div>
+  <script src="./script/script.js"></script>
 </body>
 </html>

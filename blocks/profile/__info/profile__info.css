@@ -17,10 +17,10 @@
 
 @media screen and (max-width: 767px) {
   .profile__info{
-    margin: auto;
-    margin-top: 26px;
-    grid-template-columns: 189px 18px;
+    margin: 0 auto;
     grid-template-rows: 26px 14px;
+    row-gap: 14px;
+    column-gap: 10px;
   }
 }
 
