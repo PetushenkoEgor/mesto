@@ -17,10 +17,13 @@
 @import url(../blocks/elements/elements.css);
 @import url(../blocks/element/element.css);
 @import url(../blocks/element/__image/element__image.css);
+@import url(../blocks/element/__button-image/element__button-image.css);
 @import url(../blocks/element/__like/element__like.css);
 @import url(../blocks/element/__text/element__text.css);
 @import url(../blocks/element/__content/element__content.css);
 @import url(../blocks/element/__btn-like/element__btn-like.css);
+@import url(../blocks/element/__btn-like/_active/element__btn-like_active.css);
+@import url(../blocks/element/__btn-trash/element__btn-trash.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__text/footer__text.css);
 @import url(../blocks/popup/popup.css);
@@ -32,3 +35,6 @@
 @import url(../blocks/popup/__close-icon/popup__close-icon.css);
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__imgs-group/popup__imgs-group.css);
+@import url(../blocks/popup/__imgs-title/popup__imgs-title.css);
+@import url(../blocks/popup/__image/popup__image.css);
