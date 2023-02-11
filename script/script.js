@@ -37,8 +37,6 @@ function createCard(item) {
   card.querySelector(".element__image").src = item.link;
   card.querySelector(".element__image").alt = item.name;
 
-  conteinerElements.prepend(card);
-
   const btnLike = card.querySelector(".element__btn-like");
   const btnTrash = card.querySelector(".element__btn-trash");
 
@@ -62,9 +60,10 @@ function createCard(item) {
 }
 
 function renderElement() {
-  initialCards.forEach((item) => {
-    return createCard(item)
+  const cards = initialCards.map((item) => {
+    return  createCard(item)
   });
+  conteinerElements.append(...cards);
 }
 
 renderElement();
@@ -104,6 +103,7 @@ formCard.addEventListener('submit', (evt) =>{
   const name = elementInput.value;
   const link = linkInput.value;
   const card = createCard({name:name, link:link})
+  conteinerElements.prepend(card);
   closePopup(popupNewItem)
   formCard.reset();
 });
