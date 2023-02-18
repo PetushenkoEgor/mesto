@@ -9,7 +9,7 @@ function disableSubmitButton(button){
 }
 
 function removeValidError(popup) {
-  const inputErrors = popup.querySelectorAll(".form__input-error");
+  const inputErrors = popup.querySelectorAll(".popup__input-error");
   inputErrors.forEach((error) =>{
     error.textContent = " "
   });
@@ -62,7 +62,7 @@ const hasInvalidInput = (inputs) =>{
 const handleFormInput = (evt, form, invalidInputClass, formSubmitButton, disableButtonClass, inputs) =>{
   const input = evt.target;
   console.log(input.validity.valid);
-  const errorElement = form.querySelector(`.form__input-error_${input.name}`);
+  const errorElement = form.querySelector(`.popup__input-error_${input.name}`);
   checkInputValidation(input, errorElement, invalidInputClass);
   const buttonState = hasInvalidInput(inputs);
   toggleButtonState(formSubmitButton, disableButtonClass, buttonState);

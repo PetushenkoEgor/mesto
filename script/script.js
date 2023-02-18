@@ -70,8 +70,8 @@ function keyHandlerEsc(evt){
 
 editButton.addEventListener("click", () =>{
   openPopup(popupProfile);
-  profileName.textContent = nameInput.value;
-  profileInfo.textContent = jobInput.value;
+  nameInput.value = profileName.textContent;
+  jobInput.value = profileInfo.textContent;
   removeValidError(popupProfile);
   enableSubmitButton(btnSaveProfile);
 });
