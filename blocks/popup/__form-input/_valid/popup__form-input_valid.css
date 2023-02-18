@@ -1,0 +1,4 @@
+.popup__form-input_valid{
+  border-bottom: 1px solid red;
+  outline: 0;
+}

@@ -1,0 +1,15 @@
+.popup__user-name{
+  margin: 0 auto;
+  margin-top: 54px;
+  width: calc(100% - 72px);
+  height: 27px;
+  border: 0;
+  border-bottom: 1px solid #000; 
+}
+
+@media screen and (max-width: 424px) {
+  .popup__user-name{
+    margin-top: 75px;
+    width: calc(100% - 44px);
+  }
+}

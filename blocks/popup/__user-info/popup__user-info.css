@@ -1,0 +1,14 @@
+.popup__user-info{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: calc(100% - 72px);
+  height: 27px;
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+
+@media screen and (max-width: 424px) {
+  .popup__user-info{
+    width: calc(100% - 44px);
+  }
+}
