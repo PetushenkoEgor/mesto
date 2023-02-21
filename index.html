@@ -36,9 +36,9 @@
         </button>
         <h2 class="popup__heading">Редактировать профиль</h2>
         <form class="popup__form popup__form-user-info" name="form" novalidate>
-          <input type="text" class="popup__form-input popup__form-input_user_name" id="nameInput" name="nameInput" value="Жак-Ив Кусто" required minlength="2"  maxlength="40">
+          <input type="text" class="popup__form-input popup__form-input_user_name" id="nameInput" name="nameInput" placeholder="Имя" value="Жак-Ив Кусто" required minlength="2"  maxlength="40">
           <span class="popup__input-error  popup__input-error_nameInput"></span>
-          <input type="text" class="popup__form-input popup__form-input_user_info" id="jobInput" name="jobInput" value="Исследователь океана" required minlength="2"  maxlength="200">
+          <input type="text" class="popup__form-input popup__form-input_user_info" id="jobInput" name="jobInput" placeholder="Вид деятельности" value="Исследователь океана" required minlength="2"  maxlength="200">
           <span class="popup__input-error popup__input-error_jobInput"></span>
           <button class="popup__submit-button popup__submit-button-save" type="submit">Сохранить</button>
         </form>
@@ -51,7 +51,7 @@
         </button>
         <h2 class="popup__heading">Новое место</h2>
         <form class="popup__form popup__form_new-item" name="form" novalidate>
-          <input type="text" class="popup__form-input popup__form-input_element_name" id="elementInput" name="elementInput" placeholder="Название" value=" " required minlength="2"  maxlength="30">
+          <input type="text" class="popup__form-input popup__form-input_element_name" id="elementInput" name="elementInput" required minlength="2"  maxlength="40" placeholder="Название" >
           <span class="popup__input-error popup__input-error_elementInput"></span>
           <input type="url" class="popup__form-input popup__form-input_element_link" id="linkInput" name="linkInput" placeholder="Ссылка на картинку" value=" " required>
           <span class="popup__input-error popup__input-error_linkInput"></span>

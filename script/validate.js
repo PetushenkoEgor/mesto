@@ -1,21 +1,21 @@
-function enableSubmitButton(button){
-  button.classList.remove('popup__submit-button_disabled');
+function enableSubmitButton(button, validationConfig){
+  button.classList.remove(validationConfig.disableButtonClass);
   button.disabled = false;
 }
 
-function disableSubmitButton(button){
-  button.classList.add('popup__submit-button_disabled');
+function disableSubmitButton(button, validationConfig){
+  button.classList.add(validationConfig.disableButtonClass);
   button.disabled = true;
 }
 
-function removeValidError(popup) {
+function removeValidError(popup,validationConfig) {
   const inputErrors = popup.querySelectorAll(".popup__input-error");
   inputErrors.forEach((error) =>{
     error.textContent = " "
   });
   const inputValids = popup.querySelectorAll(".popup__form-input");
   inputValids.forEach((input) =>{
-    input.classList.remove("popup__form-input_valid");
+    input.classList.remove(validationConfig.invalidInputClass);
   });
 }
 
@@ -86,11 +86,12 @@ const enableValidation = ({
   });
 }
 
-const validationConfig = enableValidation({
+const validationConfig = {
   formSelector: 'form',
   inputSelector: '.popup__form-input',
   invalidInputClass: 'popup__form-input_valid',
   submitButtonSelector: '.popup__submit-button',
   disableButtonClass: 'popup__submit-button_disabled'
-}); 
+};
 
+enableValidation(validationConfig);

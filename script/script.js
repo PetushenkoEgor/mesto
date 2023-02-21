@@ -22,13 +22,12 @@ const popupBtnCloseImage = document.querySelector(".popup__close_imgs");
 const btnSaveProfile = document.querySelector(".popup__submit-button-save");
 const btnCreateProfile = document.querySelector(".popup__submit-button-create");
 
-
-
 function createCard(item) {
   const card = templateElement.querySelector(".element").cloneNode(true);
   card.querySelector('.element__text').textContent = item.name;
-  card.querySelector(".element__image").src = item.link;
-  card.querySelector(".element__image").alt = item.name;
+  const newCardImage = card.querySelector(".element__image");
+  newCardImage.src = item.link;
+  newCardImage.alt = item.name;
 
   const btnLike = card.querySelector(".element__btn-like");
   const btnTrash = card.querySelector(".element__btn-trash");
@@ -72,8 +71,8 @@ editButton.addEventListener("click", () =>{
   openPopup(popupProfile);
   nameInput.value = profileName.textContent;
   jobInput.value = profileInfo.textContent;
-  removeValidError(popupProfile);
-  enableSubmitButton(btnSaveProfile);
+  removeValidError(popupProfile, validationConfig);
+  enableSubmitButton(btnSaveProfile, validationConfig);
 });
 
 formElementUserInfo.addEventListener('submit',(evt) =>{
@@ -85,9 +84,9 @@ formElementUserInfo.addEventListener('submit',(evt) =>{
 
 addButton.addEventListener("click", () =>{
   openPopup(popupNewItem);
-  removeValidError(popupNewItem);
+  removeValidError(popupNewItem, validationConfig);
   formCard.reset();
-  disableSubmitButton(btnCreateProfile);
+  disableSubmitButton(btnCreateProfile, validationConfig);
 });
 
 popupBtnCloseProfile.addEventListener("click", () =>{
@@ -106,7 +105,6 @@ function openPopup(popup) {
   popup.classList.add('popup_opened');
   document.addEventListener("keydown", keyHandlerEsc);
 }
-
 
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
