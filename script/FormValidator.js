@@ -10,7 +10,6 @@ class FormValidator{
     this._errorClass = validationConfig.errorClass
 
     this._inputs = Array.from(this._formElement.querySelectorAll(this._validationConfig.inputSelector));
-    this._errorClass = Array.from(this._formElement.querySelectorAll(this._validationConfig.errorClass));
     this._formSubmitButton = this._formElement.querySelector(this._submitButtonSelector);
   }
 // проверка на валидность
